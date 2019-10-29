@@ -22,19 +22,20 @@
     transform: scale(1.02);
 }
 
-.project-description:nth-child(odd) {
-    border-right: 1px solid aqua;
-    padding-right: 8%;
-}
+// .project-description:nth-child(odd) {
+//     border-right: 1px solid aqua;
+//     padding-right: 8%;
+// }
 
-.project-description:nth-child(even) {
-    border-left: 1px solid aqua;
-    margin-left: -1px;
-    padding-left: 8%;
-}
-
+// .project-description:nth-child(even) {
+//     border-left: 1px solid aqua;
+//     margin-left: -1px;
+//     padding-left: 8%;
+// }
 
 .project-description {
+    border-left: 1px solid aqua;
+    padding: 8%;
     display: flex;
     align-items: center;
 }

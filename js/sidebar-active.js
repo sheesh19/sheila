@@ -1,23 +1,30 @@
 const navs = document.querySelectorAll('.side-highlight');
 
-const toggleActiveClass = (event) => {
-    let prevActive = document.querySelectorAll('.active');
-    let locationScroll = location.hash.substring(1);
-    history.pushState({
-        id: `${location.hash}`
-    }, "Sheila's Profile", window.location.pathname + `${location.hash}`);
-    let newActive = document.querySelectorAll(`.${locationScroll}`);    
-    if (prevActive !== newActive && prevActive.length > 0 ) {
-        prevActive[0].classList.remove('active');
+const activateClass = (event) => {
+    const currentScroll = location.hash.substring(1);
+    const currentActive = document.querySelectorAll('active');
+    const newActive = document.querySelectorAll(`.${currentScroll}`);
+    
+    if (!!currentActive) {
+        currentActive.classList.remove('active');
+        history.replaceState({id: location.hash}, "Sheila's Profile", window.location.pathname + `${location.hash}`);
+        newActive[0].classList.add('active');
     };
+    history.replaceState({id: location.hash}, "Sheila's Profile", window.location.pathname + `${location.hash}`);
     newActive[0].classList.add('active');
     debugger
 };
 
-const toggleActiveOnScroll = (nav) => {
-    nav.addEventListener("scroll", toggleActiveClass());
+const toggleActiveOnClick = (nav) => {
+    nav.addEventListener('click', activateClass());
+};
+
+navs.forEach(toggleActiveOnClick);
+
+const toggleActiveOnScroll = (e) => {
+    document.addEventListener('scroll', activateClass());
 };
 
 navs.forEach(toggleActiveOnScroll);
 
-export { toggleActiveOnScroll };
+export { toggleActiveOnClick, toggleActiveOnScroll };

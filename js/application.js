@@ -1,1 +1,1 @@
-import { toggleActiveOnScroll } from './sidebar-active.js';
+// import {  toggleActiveOnClick, toggleActiveOnScroll } from './sidebar-active.js';
