@@ -1,0 +1,28 @@
+.sidebar-wrapper {
+    display: flex;
+}
+
+#sidebar {
+    position: sticky;
+    text-align: left;
+    top: 0;
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+#sidebar a {
+    transform: rotate(270deg);
+    margin: 8vh 2vh;
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar a:hover {
+    padding: 4%;
+    background-color: #444;
+}
+
+a:active {
+    border-bottom: 1px solid aqua;
+    background-color: lightseagreen;
+}

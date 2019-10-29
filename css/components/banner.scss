@@ -1,0 +1,11 @@
+.banner {
+    background: linear-gradient(180deg, rgba(27,27,27, 0.1), rgba(27,27,27,1)), url('../../assets/snorkel.jpg');
+    height: 100vh;
+    width: 100%;
+    color: $white;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    top: 0;
+    z-index: 1;
+}
