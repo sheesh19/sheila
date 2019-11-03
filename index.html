@@ -4,11 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type = "text/css" href="css/style.scss">
-    <title>Sheila Leveille's Portfolio Site</title>
+    <title>Sheila Leveille</title>
     <meta name="description" content="Sheila's portfolio website with examples of previous work.">
     <meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
     <!-- Facebook -->
     <meta property="og:title" content="Sheila Leveille - Freelance Software Developer">
@@ -18,6 +18,10 @@
 
     <!-- Fav Icon Placeholder -->
     <link rel="shortcut icon" href="#">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <!-- Banner -->
@@ -27,23 +31,27 @@
 
     <div class="wrapper">
         <!-- Sidebar -->
-        <div class="sidebar-wrapper">
+        <!-- <div class="sidebar-wrapper">
             <div id="sidebar">
                 <a class="side-highlight why" href="#why">Why</a>
                 <a class="side-highlight how" href="#how">How</a>
                 <a class="side-highlight what" href="#what">What</a>
                 <a class="side-highlight who" href="#who">Who</a>
             </div>
-        </div>
+        </div> -->
 
-    
         <!-- Why -->
         <div class="content-block">
+            <div class="hello">
+                <h2>Hello, I'm a <strong>web developer</strong></h2>
+            </div>
             <div class="block-why page-block" id="why">
-                <h4>Why: The Inspiration</h4>
+                <h2>Why <!--: The Inspiration --></h2>
                 <div class="text-block">
                     <h4>PRODUCT DEVELOPMENT. SOFTWARE DEVELOPMENT. PERSONAL DEVELOPMENT.</h4>
+                    <br><br>
                     <p>It's all about development. From UX to product management to software building- I've done it all.</p>
+                    <br><br>
                     <p>Checkout how we can work together below.</p>
                 </div>
             </div>
@@ -51,15 +59,16 @@
             <!-- How -->
         
             <div class="block-how page-block" id="how">
-                <h4>How: Experience & Skills</h4>
+                <h2>How <!-- Experiences & Skills --></h2>
 
-                <div class="cards-grid">
-                    <div class="skill-card">
-                        <div class="band soft">
-                            <p>SOFTWARE DEVELOPMENT</p>
-                        </div>
-                        <div class="band-tri soft-tri"></div>
-                        <div class="soft-content band-buff">
+                <div class="skill-card">
+                    <div class="band soft">
+                        <p>SOFTWARE DEVELOPMENT</p>
+                    </div>
+                    <div class="band-tri soft-tri"></div>
+                    <div class="soft-content band-buff">
+                        <h3>Tech Stack</h3>
+                        <div class="tech">
                             <img class="soft-icon" src="assets/ruby.png" alt="Ruby">
                             <img class="soft-icon" src="assets/mysql.png" alt="MySQL">
                             <img class="soft-icon" src="assets/html-5.png" alt="HTML">
@@ -67,12 +76,25 @@
                             <img class="soft-icon" src="assets/sass.png" alt="Sass">
                             <img class="soft-icon" src="assets/javascript.png" alt="Javascript">
                             <img class="soft-icon" src="assets/github.png" alt="Github">
-                            <div></div>
-                            <p>What's next?</p>
+                        </div>
+                        <h3>Currently Learning</h3>
+                        <div class="learning">
                             <img class="soft-icon" src="assets/react.png" alt="React">
                             <img class="soft-icon" src="assets/python.png" alt="Python">
                         </div>
+                        <h3>Website Builders</h3>
+                        <div class="website-builders">
+                            <img class="soft-icon" src="assets/squarespace.png" alt="SquareSpace">
+                            <img class="soft-icon" src="assets/wix.png" alt="Wix">
+                        </div>
+                        <p>Experience</p>
+                        <div>
+                            <p>Freelancer, software development teacher, coding workshop lecturer, and Le Wagon graduate.</p>
+                        </div>     
                     </div>
+                </div>
+
+                <div class="cards-grid">
 
                     <div class="skill-card">
                         <div class="band prod">
@@ -80,29 +102,23 @@
                         </div>
                         <div class="band-tri prod-tri"></div>
                         <div class="prod-content band-buff">
-                            <div class="prod-cols">
-                                <p>TECH</p>
-                                <img class="soft-icon" src="assets/jira.png" alt="">
-                                <img class="soft-icon" src="assets/rally.png" alt="">
-                                <img class="soft-icon" src="assets/aha.png" alt="">
+                            <p>Tech Stack</p>
+                            <div>
+                                <img class="soft-icon" src="assets/jira.png" alt="Jira">
+                                <img class="soft-icon" src="assets/rally.png" alt="Rally">
+                                <img class="soft-icon" src="assets/aha.png" alt="Aha!">
                             </div>
-                            
-                            <div class="prod-cols">
-                                <p>PROCESS</p>
-                                <div class="">
-                                    <img src="" alt="">
-                                    <p>Agile</p>
-                                </div>
-                                <div class="">
-                                    <img src="" alt="">
-                                    <p>Lean</p>
-                                </div>
-                                <div class="">
-                                    <img src="" alt="">
-                                    <p>Waterfall</p>
-                                </div>                                
+                            <p>Methodologies</p>
+                            <div class>
+                                <p>Lean, Waterfall, Agile, Scrum </p>
                             </div>
+                            <p>Experience</p>
+                            <div>
+                                <p>Product manager for a logistics app, SalesForce customization, and MES analytics dashboard app.</p>
+                                <p>Passionate about data and using benchmark metrics, data analytics, and data visualisation.</p>
+                            </div>                              
                         </div>
+                        
                     </div>
 
                     <div class="skill-card">
@@ -110,9 +126,14 @@
                             <p>USER EXPERIENCE</p>
                         </div>
                         <div class="band-tri user-tri"></div>
-                        <div class="soft-content band-buff">
-                            <p>Tech:</p>
+                        <div class="prod-content band-buff">
+                            <p>Tech Stack</p>
                             <img class="soft-icon" src="assets/figma.png" alt="Figma">
+                            <p>Experience</p>
+                            <div>
+                                <p>User groups, user interviews, customer interviews, Google Analytics, prototyping, iterative design.</p>
+                                <p>User focus drives decision making and product design.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,55 +142,57 @@
             <!-- What -->
         
             <div class="block-what page-block" id="what">
-                <h4>What: Projects & Work</h4>
+                <h2>What<!-- : Projects & Work --></h2>
                 <div class="cards-what-grid">
-                    <a href="http://www.travel-mates.co/"><div class="project-card" style="background-image: url('assets/travelmates.jpg');"></div></a>
-                    <div class="project-description">
+
+                    <div class="project-description" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="http://www.travel-mates.co/" target="_blank"><div class="project-card" style="background-image: url('assets/travelmates.jpg');"></div></a> 
                         <div class="description">
-                            <h3><strong>TravelMates</strong>: the digital destination for all solo travelers.</h3>
-                            <br>
-                            <p>Product managed and designed the full user experience.<br>
-                            Built with Ruby on Rails, JavaScript, HTML, Sass, PostgreSQL, GitHub, and Heroku.</p>
-                            
-                            <a href="https://www.youtube.com/watch?v=ymxxDMovy4E&t=281s">Checkout the Demo -></a>
-                            <br>
-                            <a href="http://www.travel-mates.co/">See the Site -></a>
+                                <h3><strong>TravelMates</strong> | the digital destination for all solo travelers.</h3>
+                                <p>Ruby on Rails, JavaScript, HTML, Sass, PostgreSQL, GitHub, Heroku</p>
+                                <br>
+                                <div class="link-block">
+                                    <a class="link-out" href="https://www.youtube.com/watch?v=ymxxDMovy4E&t=281s" target="_blank">Checkout the Demo</a>
+                                    <a class="link-out" href="http://www.travel-mates.co/" target="_blank">See the Site</a>
+                                </div>
                         </div>
                     </div>
 
-                    <a href="https://advisoryspace.com.au"><div class="project-card" style="background-image: url('assets/advisory.jpg');"></div></a>
-                    <div class="project-description">
+                    <div class="project-description" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="https://advisoryspace.com.au" target="_blank"><div class="project-card" style="background-image: url('assets/advisory.jpg');"></div></a>
                         <div class="description">
-                            <h3><strong>Advisory Space</strong>: career coaching for your future.</h3>
+                            <h3><strong>Advisory Space</strong> | career coaching for your future.</h3>
+                            <p>Built and customised on SquareSpace</p>
                             <br>
-                            <p>Built and customised on SquareSpace.</p>
-                            <br>
-                            <a href="https://advisoryspace.com.au">See the Site -></a>
+                            <div class="link-block">
+                                <a class="link-out" href="https://advisoryspace.com.au " target="_blank">See the Site</a>
+                            </div>
                         </div>
                     </div>
 
-                    <a href="https://www.alliancexr.com/"><div class="project-card" style="background-image: url('assets/alliance.jpg');"></div></a>
-                    <div class="project-description">
+
+                    <div class="project-description" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="https://www.alliancexr.com/" target="_blank"><div class="project-card" style="background-image: url('assets/alliance.jpg');"></div></a>
                         <div class="description">
-                            <h3><strong>Alliance XR</strong>: choose who you want to be.</h3>
+                            <h3><strong>Alliance XR</strong> | choose who you want to be.</h3>
+                            <p>Built and customised on Wix</p>
                             <br>
-                            <p>Built and customised on Wix. <br>
-                                Iterative product design, tested, and launched for the team.</p>
-                            <br>
-                            <a href="https://www.alliancexr.com/">See the Site -></a>
+                            <div class="link-block">
+                                <a class="link-out" href="https://www.alliancexr.com/" target="_blank">See the Site</a>
+                            </div>
                         </div>
                     </div>
                     
-                    <a href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom"><div class="project-card" style="background-image: url('assets/inspirefigma.jpg');"></div></a>
-                    <div class="project-description">
+                    <div class="project-description" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom" target="_blank"><div class="project-card" style="background-image: url('assets/inspirefigma.jpg');"></div></a>
                         <div class="description">
-                            <h3><strong>inspire9</strong>: Richmond's community-led co-working space.</h3> 
+                            <h3><strong>inspire9</strong> | Richmond's community-led co-working space.</h3> 
+                            <p>Figma, Ruby on Rails, ReactJS, HTML/CSS, PostgreSQL, GitHub, Heroku</p>
                             <br>
-                            <p>Fully designed on Figma and launched with Ruby on Rails, ReactJS, HTML/CSS, PostgreSQL, GitHub, and Heroku.</p>
-                            <br>
-                            <a href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom">Check out the Figma -></a>
-                            <br>
-                            <a href="">See the site -></a>
+                            <div class="link-block">
+                                <a class="link-out" href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom" target="_blank">Check out the Figma</a>
+                                <a class="link-out" href="" target="_blank">See the site</a>
+                            </div>
                         </div>
                     </div>
 
@@ -180,7 +203,22 @@
             <!-- Who -->
         
             <div class="block-who page-block" id="who">
-                <h4>Who: Crikey! It's a Sheila</h4>
+                <h2>Who</h2>
+                <div class="who-grid">
+                    <div class="profile-description">
+                        <p>
+                            Just a sheila living in Australia, professionally Sheila enjoys building products that solve actual user needs. 
+                            <br><br>
+                            She has experienced the full product life cycle: from UX research, to product design, to product management, to development, and all the way to launch and customer onboarding.
+                        </p>
+                        <p>
+                            Outside of work, she enjoys koality puns, exploring, hiking, reading, and paddle boarding.
+                            <br><br>
+                            She's always keen to understand how she can help out- so feel free to reach out.
+                        </p>
+                    </div>
+                    <img class="profile-img" src="assets/sheilaprofile.jpg" alt="Sheila Leveille">
+                </div>
             </div>
         </div>
     </div>
@@ -189,8 +227,14 @@
     <!-- Footer -->
 
     <footer>
-        <p>Footer hello</p>
+        <div class="social">
+            <a href="https://linkedin.com/in/sheilaleveille" target="_blank"><img class="social-icon" src="assets/social-linkedin.svg" alt="Social Linkedin"></a>
+            <a href="https://github.com/sheesh19" target="_blank"><img class="social-icon" src="assets/social-github.svg" alt="Social Linkedin"></a>
+            <a href="https://linkedin.com/in/sheilaleveille" target="_blank"><img class="social-icon" src="assets/social-instagram.svg" alt="Social Linkedin"></a>
+        </div>
+
     </footer>
-    <script type="module" src="js/application.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

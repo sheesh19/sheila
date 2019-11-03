@@ -1,0 +1,19 @@
+footer {
+    height: 24vh;
+    background-color: rgb(21, 23, 24);
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    padding: 40%;
+}

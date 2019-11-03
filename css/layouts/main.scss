@@ -4,17 +4,27 @@ html {
 
 body {
     background-color: #1B1B1B;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Muli', sans-serif;
     color: #eee;
 }
 
 .wrapper {
-    display: flex;
-}
+    /* display: flex; */
+    width: 80%;
+    margin: 0 auto;
+} 
 
 .content-block {
     flex-grow: 1;
     margin: 8% 4%;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid teal;
+    display: inline-block;
+    margin-bottom: 16vh;
+    margin-top: 16vh;
 }
 
 h3 {
@@ -22,6 +32,22 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    text-align: center;
+}
+
 strong {
-   color: aqua; 
+   color: #3E6C76;
+   text-shadow: 2px 2px 4px #0B0B0B;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        width: 96%;
+    }
 }

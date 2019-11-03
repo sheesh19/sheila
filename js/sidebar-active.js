@@ -22,7 +22,7 @@ const toggleActiveOnClick = (nav) => {
 navs.forEach(toggleActiveOnClick);
 
 const toggleActiveOnScroll = (e) => {
-    document.addEventListener('scroll', activateClass());
+    nav.addEventListener('scroll', activateClass());
 };
 
 navs.forEach(toggleActiveOnScroll);

@@ -1,0 +1,23 @@
+.who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8vw;
+}
+
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: rgba(14,25,27, 0.2) 0px 4px 16px 8px;
+}
+
+@media(max-width: 900px) {
+    .who-grid {
+        grid-template-columns: 1fr;
+    }
+}

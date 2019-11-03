@@ -1,52 +1,74 @@
 .cards-what-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 4vw;
+    margin-left: 2.6%;
+}
+
+.project-description {
+    height: 100%;
+    width: 100%;
+    box-shadow: #1A1A1A 1px 1px 1px;
+    transition: all .2s ease-in-out;
+    border-radius: 1%;
 }
 
 .project-card {
-    // background-color: rgba(53, 69, 75, 0.3);
-    box-shadow: #1A1A1A 1px 1px 1px;
     align-items: center;
     background-size: cover;
     background-position: center;
-    margin: 2rem;
-    height: 24rem;
-    width: 40rem;
-    border-radius: 0.8rem;
-    position: relative;
-    transition: all .2s ease-in-out;
-    // border-left: 1px solid aqua;
+    height: 40vh;
+    width: 100%;
+    display: inline-block;
 }
 
-.project-card:hover {
-    transform: scale(1.02);
+.project-description:hover {
+    /* transform: scale(1.02); */
+    box-shadow: rgba(14,25,27, 0.2) 0px 4px 16px 8px;
 }
 
-// .project-description:nth-child(odd) {
-//     border-right: 1px solid aqua;
-//     padding-right: 8%;
-// }
 
-// .project-description:nth-child(even) {
-//     border-left: 1px solid aqua;
-//     margin-left: -1px;
-//     padding-left: 8%;
-// }
-
-.project-description {
-    border-left: 1px solid aqua;
-    padding: 8%;
+.description {
+    background-color: rgba(53, 69, 75, 0.1);
+    padding: 4%;
+    padding-bottom: 8%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.project-description-left {
-    margin-left: auto;
-    text-align: right;
+/* Link Styling */
+
+.link-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-out  {
+    transition: all .2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3E6C76;
+    padding: 8px 16px;
+    color: white;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.link-out:hover {
+    border: 1px solid #3E6C76;
+    background-color: #3E6C76;
+    color: white;
+    box-shadow: rgba(14,25,27, 0.2) 0px 4px 16px 8px;
 }
 
 @media(max-width: 1500px) {
     .cards-what-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        height: 64vh;
     }
 }
