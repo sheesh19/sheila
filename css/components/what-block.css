@@ -10,7 +10,7 @@
     height: 100%;
     width: 100%;
     box-shadow: #1A1A1A 1px 1px 1px;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in-out;
     border-radius: 1%;
 }
 
@@ -21,11 +21,12 @@
     height: 40vh;
     width: 100%;
     display: inline-block;
+    box-shadow: rgba(14, 25, 27, 0.2) 0px 4px 16px 8px;
+
 }
 
 .project-description:hover {
-    /* transform: scale(1.02); */
-    box-shadow: rgba(14,25,27, 0.2) 0px 4px 16px 8px;
+    transform: scale(1.01);
 }
 
 
@@ -70,5 +71,16 @@
 
     .project-card {
         height: 64vh;
+    }
+}
+
+@media(max-width: 560px) {
+    .project-card {
+        height: 32vh;
+    }
+
+    .cards-what-grid {
+        margin-left: 0;
+        grid-gap: 16vw;
     }
 }

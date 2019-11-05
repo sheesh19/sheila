@@ -52,10 +52,15 @@
 .hello {
     text-align: center;
     margin: 0 auto;
+    padding-top: 16vh;
 }
 
 
-@media(max-width: 400px) {
+@media(max-width: 560px) {
+    .parallax-head {
+        top: 72%;
+    }
+
     .hello {
         width: 56vw;
     }
