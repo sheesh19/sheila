@@ -1,0 +1,14 @@
+/* Imported Styles */
+@import url("layouts/main.css");
+
+
+/* Imported Components */
+@import url("components/banner.css");
+@import url("components/sidebar.css");
+@import url("components/why-block.css");
+@import url("components/how-block.css");
+@import url("components/what-block.css");
+@import url("components/who-block.css");
+@import url("components/footer.css");
+
+

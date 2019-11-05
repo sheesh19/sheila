@@ -3,20 +3,30 @@ html {
 }
 
 body {
-    background-color: #1B1B1B;
+    background-color: #131617;
     font-family: 'Muli', sans-serif;
     color: #eee;
 }
 
 .wrapper {
-    /* display: flex; */
+    background-color: #131617;
     width: 80%;
     margin: 0 auto;
+    z-index: 2;
 } 
 
 .content-block {
     flex-grow: 1;
-    margin: 8% 4%;
+    margin: 0 4%;
+}
+
+.page-block {
+    padding-bottom: 16vh;
+}
+
+h1 {
+    font-size: 8vw;
+    text-shadow: 2px 2px 4px #0B0B0B;
 }
 
 h2 {
@@ -24,7 +34,6 @@ h2 {
     border-bottom: 2px solid teal;
     display: inline-block;
     margin-bottom: 16vh;
-    margin-top: 16vh;
 }
 
 h3 {

@@ -63,7 +63,7 @@
     box-shadow: rgba(14,25,27, 0.2) 0px 4px 16px 8px;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1380px) {
     .cards-what-grid {
         grid-template-columns: 1fr;
     }

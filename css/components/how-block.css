@@ -9,7 +9,7 @@
     box-shadow: #1A1A1A 1px 1px 1px;
     align-items: center;
     margin: 2rem;
-    height: 72vh;
+    padding-bottom: 16vh;
     width: 100%;
     border-radius: 1%;
     position: relative;
@@ -21,17 +21,17 @@
     position: absolute;
     border-radius: 2%;
     box-shadow: #1A1A1A 1px 1px 1px;
-    top: 4%;
+    top: 24px;
     left: -39px;
-    width: 48%;
-    padding: 8px 10%;
+    width: 56%;
+    padding: 8px 16px;
     z-index: 1;
 }
 
 .band-tri {
     position: absolute;
     left: -39px;
-    top: 88px;
+    top: 93px;
     width: 0;
     height: 0;
     border-left: 2.4rem solid transparent;
@@ -96,7 +96,7 @@
     padding-right: 8px;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1380px) {
     .cards-grid {
         grid-template-columns: 1fr;
     }
