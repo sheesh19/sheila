@@ -55,6 +55,11 @@
     padding-top: 16vh;
 }
 
+@media(max-width: 900px) {
+    .parallax-head {
+        top: 64%;
+    }
+
 
 @media(max-width: 560px) {
     .parallax-head {
