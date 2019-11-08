@@ -10,12 +10,12 @@ footer {
 .social {
     display: flex;
     justify-content: space-evenly;
+    width: 32%;
 }
 
 .social-icon {
     height: 40px;
     width: 40px;
-    padding: 40%;
 }
 
 .social-clickable {
