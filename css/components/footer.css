@@ -18,6 +18,23 @@ footer {
     padding: 40%;
 }
 
-.social-icon:hover {
-    transform: (1.01);
+.social-clickable {
+    position: relative;
+    display: inline;
+}
+
+.social-overlay {
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    position: absolute;
+    top: -53px;
+    left: 28px;
+    border-radius: 4px;
+}
+
+.social-overlay:hover {
+    opacity: 0.3;
+    background-color: rgba(53, 69, 75, 1);
+    z-index: 1;
 }

@@ -6,6 +6,7 @@ body {
     background-color: #131617;
     font-family: 'Muli', sans-serif;
     color: #aaa;
+    margin: 0;
 }
 
 .wrapper {
@@ -43,7 +44,6 @@ h3 {
     color: #eee;
     margin-top: 0;
     padding-bottom: 2%;
-    text-align: center;
     border-bottom: teal solid 2px;
     margin-bottom: 16vh;
 }
