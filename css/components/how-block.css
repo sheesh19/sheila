@@ -8,7 +8,7 @@
     background-color: rgba(53, 69, 75, 0.1);
     box-shadow: #1A1A1A 1px 1px 1px;
     align-items: center;
-    margin: 2rem;
+    margin-bottom: 2rem;
     padding-bottom: 12vh;
     width: 100%;
     border-radius: 1%;
@@ -80,17 +80,15 @@
     padding: 0;
 }
 
-
 .soft-content {
     margin-left: 4rem;
+    margin-right: 2vw;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 1vw;
     grid-row-gap: 6vh;
-    align-items: center;
     padding-top: 136px;
 }
-
 
 .prod-content {
     margin-left: 4rem;
@@ -125,7 +123,7 @@
 
 @media(max-width: 560px) {
     .skill-card {  
-        margin: 8% 4%;
+        margin: 8% 2%;
         padding-bottom: 8vh;
     }
 
@@ -139,5 +137,34 @@
         margin-left: 6%;
         grid-template-columns: 1fr 4fr;
         grid-row-gap: 4vh;
+    }
+
+    .soft-icon {
+        height: 40px;
+        width: 40px;
+        padding-right: 8px;
+    }
+
+    .band {
+        width: 98%;
+        left: -24px;
+
+    }
+
+    .band-tri {
+        left: -24px;
+        border-left: 1.4rem solid transparent;
+    }
+
+    .soft-tri {
+        border-top: 1.4rem solid rgba(43, 89, 99, 0.9);
+    }
+
+    .prod-tri {
+        border-top: 1.4rem solid rgba(43, 58, 99, 0.9);
+    }
+
+    .user-tri {
+        border-top: 1.4rem solid rgba(44, 94, 55, 0.9);
     }
 }

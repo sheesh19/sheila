@@ -2,6 +2,8 @@
     height: 100%;
     width: 100vw;
     overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 1px;
 }
 
 .parallax__layer {
@@ -13,12 +15,16 @@
 }
 
 .parallax-background {
-    transform: translateZ(-1px);
+    transform: translateZ(-2px) scale(3);
 }
 
 .parallax-head {
-    top: 56%;
+    top: 76%;
     left: 40%;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    z-index: 1;
+    transform-style: preserve-3d;
 }
 
 .parallax-img {
@@ -35,8 +41,23 @@
     position: relative;
     bottom: 0;
     display: block;
-    z-index: 1;
+    z-index: 2;
     height: 140%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-content-front {
+    transform: translateZ(0);
+    background: linear-gradient(180deg, rgba(19,22,23, 0.1), rgba(19,22,23,1)), url('../../assets/snorkel-wave.png');
+    position: relative;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    height: 110%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -56,6 +77,7 @@
     padding-top: 16vh;
 }
 
+
 @media(max-width: 900px) {
     .parallax-head {
         top: 64%;
@@ -64,10 +86,22 @@
 
 @media(max-width: 560px) {
     .parallax-head {
-        top: 72%;
+        top: 98%;
+        transform: translateZ(-1px) scale(3);
     }
 
     .hello {
-        width: 56vw;
+        width: 72vw;
+        margin-top: 16vh;
+        margin-bottom: 16vh;
+    }
+
+    .hello-open {
+        margin: 0;
+    }
+
+    .hello-close {
+        margin-top: 0;
+        margin-bottom: 8vh;
     }
 }

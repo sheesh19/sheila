@@ -25,9 +25,10 @@
     <!-- Banner -->
     <div class="parallax">
         <div class="parallax__layer parallax-background parallax-img"></div>
-        <div class="parallax__layer parallax-background parallax-head"><h1>Sheila Leveille</h1></div>
+        <div class="parallax__layer  parallax-head"><h1>Sheila Leveille</h1></div>
         <div class="parallax__layer parallax-content"></div>
     </div>
+    
     <div class="content">
         <div class="wrapper">
             <div class="content-block">
@@ -35,36 +36,39 @@
                 <!-- Why -->
 
                 <div class="hello">
-                    <h2>Hello, I'm a <strong>web developer</strong></h2>
+                    <h2 class="hello-open">Hi, I'm a </h2> <h2 class="hello-close"><strong>web developer</strong></h2>
                 </div>
+
                 <div class="block-why page-block" id="why">
-                    <h2 data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Why</h2>
-                    <div class="why-icon-block">
-                        <div class="why-software">
-                            <img class="why-icons" src="assets/code.svg" alt="Software Development">
-                            <p>Creating products</p>
+                    <div class="block-why-content">
+                        <h3>Why</h3>
+                        <div class="why-icon-block">
+                            <div class="why-software">
+                                <img class="why-icons" src="assets/code.svg" alt="Software Development">
+                                <p>Creating products</p>
+                            </div>
+                            <div class="why-product">
+                                <img class="why-icons" src="assets/team.svg" alt="Product Management">
+                                <p>Solving user needs</p>
+                            </div>
+                            <div class="why-growth">
+                                <img class="why-icons" src="assets/growth.svg" alt="Growth">
+                                <p>Continuous growth</p>
+                            </div>
                         </div>
-                        <div class="why-product">
-                            <img class="why-icons" src="assets/team.svg" alt="Product Management">
-                            <p>Solving user needs</p>
-                        </div>
-                        <div class="why-growth">
-                            <img class="why-icons" src="assets/growth.svg" alt="Growth">
-                            <p>Continuous growth</p>
+    
+                        <div class="text-block">
+                            <p>From UX to product management to software building- I've done it all.</p>
+                            <p>Check out how we can work together below.</p>
                         </div>
                     </div>
 
-                    <div class="text-block">
-                        <p>From UX to product management to software building- I've done it all.</p>
-                        <br>
-                        <p>Check out how we can work together below.</p>
-                    </div>
                 </div>
             
                 <!-- How -->
             
                 <div class="block-how page-block" id="how">
-                    <h2>How <!-- Experiences & Skills --></h2>
+                    <h3>How <!-- Experiences & Skills --></h3>
     
                     <div class="skill-card">
                         <div class="band soft">
@@ -109,7 +113,7 @@
                                     <img class="soft-icon" src="assets/rally.png" alt="Rally">
                                     <img class="soft-icon" src="assets/aha.png" alt="Aha!">
                                 </div>
-                                <p class="how-title-prod">Methodologies</p>
+                                <p class="how-title-prod">Methods</p>
                                 <div class>
                                     <p>Lean, Waterfall, Agile, Scrum </p>
                                 </div>
@@ -143,81 +147,88 @@
                 <!-- What -->
             
                 <div class="block-what page-block" id="what">
-                    <h2>What<!-- : Projects & Work --></h2>
+                    <h3>What<!-- : Projects & Work --></h3>
                     <div class="cards-what-grid">
-    
-                        <div class="project-description" >
-                            <a href="http://www.travel-mates.co/" target="_blank"><div class="project-card" style="background-image: url('assets/travelmates.jpg');"></div></a> 
-                            <div class="description">
-                                    <h3><strong>TravelMates</strong> | the digital destination for all solo travelers.</h3>
+
+                        <div class="block-what-card">
+                            <img src="assets/travelmates.jpg" alt="TravelMates" class="block-what-image">
+                            <div class="block-what-description">
+                                <div class="description">
+                                    <h4><strong>TravelMates</strong> | the digital destination for all solo travelers.</h4>
                                     <p>Built With: Ruby on Rails, JavaScript, HTML, Sass, PostgreSQL, GitHub, Heroku</p>
                                     <br>
                                     <div class="link-block">
                                         <a class="link-out" href="https://www.youtube.com/watch?v=ymxxDMovy4E&t=281s" target="_blank">Check out the Demo</a>
                                         <a class="link-out" href="http://www.travel-mates.co/" target="_blank">See the Site</a>
                                     </div>
-                            </div>
-                        </div>
-    
-                        <div class="project-description" >
-                            <a href="https://advisoryspace.com.au" target="_blank"><div class="project-card" style="background-image: url('assets/advisory.jpg');"></div></a>
-                            <div class="description">
-                                <h3><strong>Advisory Space</strong> | career coaching for your future.</h3>
-                                <p>Built and customised on SquareSpace</p>
-                                <br>
-                                <br>
-                                <div class="link-block">
-                                    <a class="link-out" href="https://advisoryspace.com.au " target="_blank">See the Site</a>
                                 </div>
                             </div>
                         </div>
-    
-    
-                        <div class="project-description" >
-                            <a href="https://www.alliancexr.com/" target="_blank"><div class="project-card" style="background-image: url('assets/alliance.jpg');"></div></a>
-                            <div class="description">
-                                <h3><strong>Alliance XR</strong> | choose who you want to be.</h3>
-                                <p>Built and customised on Wix</p>
-                                <br>
-                                <br>
-                                <div class="link-block">
-                                    <a class="link-out" href="https://www.alliancexr.com/" target="_blank">See the Site</a>
+
+                        <div class="block-what-card">
+                            <img src="assets/inspirefigma.jpg" alt="inspire9" class="block-what-image" style="width:100%">
+                            <div class="block-what-description">
+                                <div class="description">
+                                        <h4><strong>inspire9</strong> | Richmond's community-led co-working space.</h4> 
+                                        <p>Built with: Figma, Ruby on Rails, ReactJS, HTML/CSS, PostgreSQL, GitHub, Heroku</p>
+                                        <br>
+                                        <div class="link-block">
+                                            <a class="link-out" href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom" target="_blank">Check out the Figma</a>
+                                            <a class="link-out" href="" target="_blank">See the site</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="project-description" >
-                            <a href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom" target="_blank"><div class="project-card" style="background-image: url('assets/inspirefigma.jpg');"></div></a>
-                            <div class="description">
-                                <h3><strong>inspire9</strong> | Richmond's community-led co-working space.</h3> 
-                                <p>Built with: Figma, Ruby on Rails, ReactJS, HTML/CSS, PostgreSQL, GitHub, Heroku</p>
-                                <br>
-                                <div class="link-block">
-                                    <a class="link-out" href="https://www.figma.com/proto/wdqpaHrQmtmXYQ0iBOoFzU/Inspire-9?node-id=0%3A1&scaling=min-zoom" target="_blank">Check out the Figma</a>
-                                    <a class="link-out" href="" target="_blank">See the site</a>
+
+                        <div class="block-what-card">
+                                <img src="assets/advisory.jpg" alt="Advisory Space" class="block-what-image">
+                                <div class="block-what-description">
+                                    <div class="description">
+                                            <h4><strong>Advisory Space</strong> | career coaching for your future.</h4>
+                                            <p>Built and customised on SquareSpace</p>
+                                            <br>
+                                            <br>
+                                            <div class="link-block">
+                                                <a class="link-out" href="https://advisoryspace.com.au " target="_blank">See the Site</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="block-what-card">
+                            <img src="assets/alliance.jpg" alt="Alliance" class="block-what-image">
+                            <div class="block-what-description">
+                                <div class="description">
+                                        <h4><strong>Alliance XR</strong> | choose who you want to be.</h4>
+                                        <p>Built and customised on Wix</p>
+                                        <br>
+                                        <br>
+                                        <div class="link-block">
+                                            <a class="link-out" href="https://www.alliancexr.com/" target="_blank">See the Site</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
-    
                 </div>
-            
+
+
                 <!-- Who -->
             
                 <div class="block-who page-block" id="who">
-                    <h2>Who</h2>
+                    <h3>Who</h3>
                     <div class="who-grid">
                         <div class="profile-description">
                             <p>
-                                Just a sheila living in Australia, professionally Sheila enjoys building products that solve actual user needs. 
+                                Just a sheila living in Australia, professionally I enjoy building products that solve actual user needs. 
                                 <br><br>
-                                She has experienced the full product life cycle: from UX research, to product design, to product management, to development, and all the way to launch and customer onboarding.
+                                I have experienced the full product life cycle: from UX research, to product design, to product management, to development, and all the way to launch and customer onboarding.
                             </p>
                             <p>
-                                Outside of work, she enjoys koality puns, exploring, hiking, reading, and paddle boarding.
+                                Outside of work, I enjoy koality puns, exploring, hiking, reading, and paddle boarding.
                                 <br><br>
-                                She's always keen to understand how she can help out- so feel free to reach out.
+                                I'm always keen to understand how I can help out- so feel free <a href="mailto:sbleveille@gmail.com?Subject=Freelance%20Opportunity" target="_top"><strong>to reach out</strong></a>.
                             </p>
                         </div>
                         <img class="profile-img" src="assets/sheilaprofile.jpg" alt="Sheila Leveille">
